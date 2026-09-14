@@ -1,0 +1,320 @@
+DOCUMENTACION DEL PERFIL DEL SISTEMA MRP
+========================================
+
+Proyecto: Sistema MRP (Material Requirements Planning / Planificación de Requerimientos de Materiales)
+Metodología posterior: Scrum
+
+COMO ESTAMOS TRABAJANDO
+-----------------------
+1. El usuario pasa un ejemplo de otra documentación (otro sistema).
+2. Se adapta esa sección al sistema MRP.
+3. Todo se guarda en este único archivo para copiar a Word.
+4. Cuando termine el perfil, se pasa al desarrollo del marco de trabajo Scrum.
+
+ESTADO ACTUAL
+-------------
+- Completado: Introduccion
+- Completado: Antecedentes (a, b, c)
+- Completado: Descripcion del problema, objetivo general y objetivos especificos
+- Completado: Alcance (web y movil)
+- Completado: Elementos del sistema (hardware y software)
+- Completado: Tecnologia (desarrollo y puesta en marcha)
+- Siguiente: esperar el ejemplo del usuario para la proxima seccion
+
+
+1. Introduccion
+
+En el contexto productivo contemporáneo, las empresas manufactureras operan en un entorno marcado por la volatilidad de la demanda, la diversidad de productos, la dependencia de múltiples proveedores y la exigencia de cumplir plazos de entrega cada vez más estrictos. En este escenario, la coordinación entre ventas, compras, almacén y producción deja de ser una tarea operativa menor y se convierte en un factor crítico de competitividad. Cuando dicha coordinación se realiza de manera empírica, mediante hojas de cálculo aisladas o decisiones basadas solo en la experiencia, aparecen con frecuencia problemas como sobrestock, rupturas de inventario, compras urgentes, demoras en la fabricación y desviaciones de costo que afectan tanto la rentabilidad como la calidad del servicio al cliente.
+
+Históricamente, la gestión de materiales evolucionó desde enfoques reactivos hacia modelos más sistemáticos de planificación. En ese proceso surge el MRP (Material Requirements Planning) o Planificación de Requerimientos de Materiales, una metodología orientada a traducir la demanda de productos terminados en necesidades concretas de componentes, insumos y materias primas. El MRP no se limita a registrar existencias: permite proyectar requerimientos futuros, calcular cantidades netas a comprar o fabricar y establecer fechas sugeridas de emisión de órdenes, considerando la estructura del producto (BOM – Bill of Materials), el inventario disponible, las órdenes en tránsito y los tiempos de reposición (lead times).
+
+Más allá de su definición técnica, el valor de un sistema MRP radica en su capacidad para transformar información dispersa en un plan de materiales coherente y accionable. A partir de un plan maestro de producción o de pedidos confirmados, el sistema realiza la explosión de materiales, determina necesidades brutas y netas, y genera propuestas de órdenes de compra y/o de fabricación. De esta forma, la organización puede anticiparse a la demanda, reducir incertidumbre operativa y mejorar la sincronización entre áreas. En versiones más amplias —asociadas al concepto de MRP II (Manufacturing Resource Planning)— esta lógica puede integrarse también con capacidad, costos y otros recursos productivos; no obstante, el presente proyecto se centra en la base funcional del MRP de materiales como núcleo del sistema a desarrollar.
+
+El presente documento corresponde al perfil del sistema de una solución informática de tipo MRP, pensada para apoyar la gestión de producción e inventarios en un entorno manufacturero. Su finalidad es describir de manera clara el problema a resolver, la justificación del desarrollo, los objetivos perseguidos, los actores involucrados, el alcance funcional y las restricciones del proyecto. En otras palabras, este perfil establece qué sistema se pretende construir, para quién, con qué propósito y bajo qué límites, antes de iniciar las etapas de planificación y construcción del software.
+
+Desde el punto de vista metodológico, el desarrollo del sistema se abordará posteriormente mediante el marco de trabajo Scrum, lo que implica un enfoque iterativo e incremental, con priorización continua del backlog, entregas parciales de valor y validación frecuente con los interesados. Sin embargo, antes de entrar en sprints, historias de usuario y artefactos ágiles, resulta indispensable contar con un perfil sólido que oriente las decisiones de alcance y reduzca la ambigüedad del problema.
+
+En síntesis, esta introducción presenta el marco general del proyecto: la necesidad de planificar materiales de forma estructurada, el rol del MRP como respuesta tecnológica y de gestión, y la importancia de documentar el perfil del sistema como base formal para el desarrollo. A partir de aquí, las secciones siguientes profundizarán en el planteamiento del problema, los objetivos, la justificación, el alcance y los elementos conceptuales que sustentan la propuesta.
+
+
+2. Antecedentes
+
+a. Fundamentación teórica
+
+Con el avance de las tecnologías de la información, la forma en que las organizaciones manufactureras planifican la producción y administran sus materiales ha cambiado de manera significativa. Durante mucho tiempo, procesos como el cálculo de necesidades de insumos, el control de inventarios, la emisión de órdenes de compra y la programación de fabricación se realizaron de forma manual, mediante cuadernos, planillas aisladas o la experiencia del personal de planta.
+
+Este tipo de gestión genera problemas recurrentes: errores de cálculo, información desactualizada, sobrestock, faltantes de materiales, compras urgentes y dificultad para anticipar la demanda. En la actualidad, gracias a la digitalización, estos procesos pueden sistematizarse mediante soluciones de MRP (Material Requirements Planning) o Planificación de Requerimientos de Materiales, que permiten determinar qué comprar o fabricar, en qué cantidad y en qué momento, a partir de la demanda, la lista de materiales (BOM), el inventario disponible y los tiempos de reposición (lead times).
+
+Además, el uso de sistemas informáticos modernos permite integrar en una misma plataforma áreas clave como producción, almacén, compras y planificación. De esta manera, se reduce la fragmentación de la información y se mejora la sincronización operativa. El MRP no solo registra existencias: proyecta necesidades futuras, calcula requerimientos netos y genera propuestas de órdenes de compra y/o fabricación, facilitando decisiones más oportunas y basadas en datos.
+
+En un nivel más amplio, enfoques como el MRP II (Manufacturing Resource Planning) incorporan también capacidad, costos y otros recursos productivos. Si bien el presente proyecto se centra en la base funcional del MRP de materiales, su fundamentación se apoya en estos principios de planificación integrada, control de inventarios y mejora de la eficiencia operativa.
+
+Por tanto, la implementación de un sistema MRP representa una solución tecnológica orientada a optimizar la planificación de materiales, reducir incertidumbre en la cadena de suministro interna y mejorar el desempeño productivo de la organización.
+
+b. Sistemas similares
+
+Odoo MRP
+Odoo MRP es un módulo de planificación y fabricación dentro del ecosistema Odoo. Permite gestionar la producción a partir de listas de materiales, rutas de fabricación e inventarios, facilitando la generación de órdenes de manufactura y el control de componentes.
+
+Sus funcionalidades son:
+- Gestión de listas de materiales (BOM)
+- Órdenes de fabricación
+- Planificación de requerimientos de materiales
+- Control de inventario de componentes y productos terminados
+- Seguimiento de operaciones de producción
+- Integración con compras y almacenes
+- Reportes de producción e inventarios
+
+SAP MRP / SAP S/4HANA Manufacturing
+SAP ofrece una de las soluciones MRP más utilizadas a nivel empresarial. Su módulo de planificación permite calcular necesidades de materiales a gran escala, integrando demanda, inventarios, compras y producción dentro de un entorno ERP.
+
+Sus funcionalidades son:
+- Planificación de requerimientos de materiales
+- Gestión de BOM y datos maestros
+- Cálculo de necesidades netas
+- Propuestas de órdenes de compra y fabricación
+- Control de lead times y stock de seguridad
+- Integración con logística, finanzas y producción
+- Reportes y análisis operativos
+
+MRPeasy
+MRPeasy es un sistema MRP orientado a pequeñas y medianas empresas manufactureras. Se caracteriza por su enfoque práctico para planificar producción, controlar inventarios y gestionar compras desde una plataforma web.
+
+Sus funcionalidades son:
+- Planificación de producción
+- Gestión de BOM
+- Control de inventarios
+- Órdenes de compra y de fabricación
+- Seguimiento de materiales y costos
+- Generación de reportes
+- Acceso mediante entorno web
+
+c. Casos de estudio
+
+Caso de estudio 1: Sistema MRP Web para PyME manufacturera
+Este sistema web permite a una empresa de manufactura planificar sus necesidades de materiales de forma centralizada. Los usuarios pueden registrar productos, definir listas de materiales (BOM), consultar inventarios y generar propuestas de compra o fabricación según la demanda. El sistema facilita el cálculo de requerimientos brutos y netos, considerando stock disponible y tiempos de entrega. También permite dar seguimiento a órdenes de compra y de producción, manteniendo actualizada la información de almacén. La plataforma ofrece una interfaz accesible desde el navegador, lo que ayuda a organizar la planificación, reducir errores manuales y mejorar la coordinación entre producción, compras e inventarios.
+
+Caso de estudio 2: Sistema MRP integrado con compras e inventarios
+Este sistema combina planificación de materiales con módulos de inventario y adquisiciones. A partir de un plan maestro o de pedidos confirmados, realiza la explosión de materiales y determina qué componentes deben reponerse. Una característica importante es la integración entre áreas: cuando el MRP detecta faltantes, genera automáticamente sugerencias de órdenes de compra o fabricación. Además, permite visualizar alertas de stock mínimo, lead times vencidos y materiales críticos. Con ello, la organización reduce compras de emergencia, mejora la disponibilidad de insumos y fortalece el control operativo sobre la cadena interna de suministro.
+
+Caso de estudio 3: Sistema de planificación de producción basado en MRP
+Este sistema está enfocado en optimizar la planificación productiva mediante el uso de datos históricos de demanda, estructuras de producto e inventarios en tiempo real. Permite proyectar necesidades de materiales, priorizar órdenes y anticipar posibles cuellos de botella por falta de componentes. También incluye reportes de cobertura de materiales, estado de órdenes y cumplimiento de fechas sugeridas de reposición. De esta forma, los responsables de producción y logística pueden tomar decisiones más informadas, mejorar la puntualidad de entrega y reducir costos asociados al sobrestock o a la escasez de insumos.
+
+
+3. Descripción del problema
+
+En muchas organizaciones manufactureras, la planificación de materiales y la coordinación entre producción, compras e inventarios se realizan mediante métodos manuales o herramientas poco integradas, como hojas de cálculo aisladas o registros dispersos. Esta forma de trabajo dificulta calcular con precisión qué insumos se requieren, en qué cantidad y en qué momento, especialmente cuando existen múltiples productos, estructuras de materiales (BOM) y tiempos de reposición distintos.
+
+Como consecuencia, aparecen problemas frecuentes: sobrestock, faltantes de componentes, compras urgentes, retrasos en la fabricación, información desactualizada y decisiones tomadas sin una visión consolidada de la demanda y del inventario disponible. La falta de un sistema que integre demanda, listas de materiales, existencias y lead times afecta la eficiencia operativa, eleva costos y reduce la capacidad de cumplir plazos de entrega.
+
+Ante esta situación, se requiere un sistema de información de tipo MRP (Material Requirements Planning) que permita automatizar la planificación de requerimientos de materiales, mejorar el control de inventarios y apoyar la generación de órdenes de compra y/o fabricación de manera oportuna y basada en datos.
+
+a. Objetivo General
+
+Desarrollar un sistema de información web y móvil de tipo MRP para la planificación de requerimientos de materiales, que permita integrar demanda, listas de materiales (BOM), inventarios y tiempos de reposición, generando propuestas de compra y/o fabricación que mejoren la eficiencia operativa y la toma de decisiones en entornos manufactureras.
+
+b. Objetivos Específicos
+
+- Analizar y definir los requisitos del sistema, considerando demanda, productos, componentes, inventarios, lead times y generación de órdenes.
+- Diseñar un módulo de datos maestros que permita registrar y administrar productos terminados, materiales, unidades de medida y parámetros de planificación.
+- Implementar un módulo de listas de materiales (BOM) que permita definir la estructura de cada producto y la cantidad de componentes requeridos.
+- Desarrollar un módulo de inventarios para controlar existencias, stock mínimo, ingresos, salidas y disponibilidad real de materiales.
+- Crear un módulo de demanda o plan de producción que permita registrar pedidos, necesidades de producto terminado o un plan maestro de producción.
+- Implementar el motor MRP para calcular requerimientos brutos y netos, realizar la explosión de materiales y sugerir fechas y cantidades de reposición.
+- Desarrollar un módulo de órdenes sugeridas de compra y/o fabricación, con seguimiento de su estado.
+- Implementar un sistema de usuarios y permisos que garantice la seguridad de la información y el acceso según el rol.
+- Desarrollar reportes que faciliten la toma de decisiones sobre cobertura de materiales, faltantes, inventarios y estado de órdenes.
+- Desarrollar una aplicación móvil que permita consultar inventarios, faltantes, alertas y el estado de órdenes de forma remota.
+
+
+4. Alcance
+
+Sistema Web:
+
+Gestión de datos maestros:
+- Registro y administración de productos terminados.
+- Registro y administración de materiales, componentes e insumos.
+- Definición de unidades de medida.
+- Configuración de lead times de compra y/o fabricación.
+- Definición de stock mínimo y parámetros básicos de planificación.
+
+Gestión de listas de materiales (BOM):
+- Creación y edición de BOM por producto.
+- Asociación de componentes y cantidades requeridas.
+- Consulta de la estructura de materiales de cada producto.
+- Actualización de BOM ante cambios de producto.
+- Validación de consistencia entre producto y componentes.
+
+Gestión de demanda y planificación:
+- Registro de pedidos o necesidades de producto terminado.
+- Carga o definición de un plan maestro de producción (MPS) simplificado.
+- Consulta de demanda pendiente por producto.
+- Priorización de necesidades según fechas requeridas.
+- Uso de la demanda como entrada para el cálculo MRP.
+
+Gestión de inventarios:
+- Registro de existencias actuales por material y producto.
+- Actualización de stock por ingresos y salidas.
+- Consulta de disponibilidad real.
+- Control de stock mínimo.
+- Identificación de materiales críticos o con cobertura insuficiente.
+
+Motor MRP (planificación de requerimientos):
+- Explosión de materiales a partir de la demanda y la BOM.
+- Cálculo de requerimientos brutos.
+- Cálculo de requerimientos netos considerando inventario disponible.
+- Consideración de lead times para sugerir fechas de emisión.
+- Generación de propuestas de reposición de materiales.
+- Visualización de resultados del cálculo MRP por material.
+
+Gestión de órdenes sugeridas:
+- Generación de órdenes sugeridas de compra.
+- Generación de órdenes sugeridas de fabricación (si aplica).
+- Consulta y seguimiento del estado de las órdenes (sugerida, confirmada, cerrada).
+- Asociación de órdenes con materiales, cantidades y fechas.
+- Actualización del plan ante cambios de demanda o inventario.
+
+Gestión de usuarios:
+- Administración de usuarios con roles y permisos (administrador, planificador, almacén, compras, etc.).
+- Control de acceso a los diferentes módulos del sistema.
+- Registro de actividades relevantes realizadas por los usuarios.
+
+Seguridad y control:
+- Control de acceso mediante autenticación.
+- Registro de auditoría de acciones importantes en el sistema.
+- Protección de la información almacenada.
+
+Panel de reportes:
+- Reportes de requerimientos de materiales.
+- Reportes de faltantes y cobertura de stock.
+- Reportes de inventario disponible.
+- Reportes de órdenes sugeridas y su estado.
+- Exportación de reportes en PDF o Excel.
+
+Aplicación Móvil:
+
+Acceso remoto:
+- Acceso al sistema desde dispositivos móviles.
+- Consulta de información de inventarios y materiales.
+- Consulta del estado de órdenes sugeridas.
+- Visualización de resultados resumidos del MRP.
+
+Operación en planta o almacén:
+- Consulta rápida de stock disponible.
+- Consulta de materiales faltantes o críticos.
+- Confirmación rápida del estado de órdenes (por ejemplo, sugerida a confirmada).
+- Actualización simple de movimientos de inventario (ingresos/salidas básicas).
+
+Web y Móvil:
+
+Alertas y notificaciones:
+- Alertas por stock mínimo.
+- Alertas por faltantes de materiales detectados en el MRP.
+- Alertas por órdenes próximas a su fecha sugerida.
+- Notificaciones al usuario según su rol.
+
+Consultas compartidas:
+- Consulta de cobertura de materiales.
+- Consulta de órdenes pendientes.
+- Consulta de inventario disponible.
+
+Fuera de alcance (para esta etapa del proyecto):
+- Integración avanzada con contabilidad o finanzas completas tipo ERP.
+- Optimización compleja de capacidad de planta (MRP II completo).
+- Inteligencia artificial predictiva.
+- Integración con sensores IoT o monitoreo ambiental.
+
+
+5. Elementos del sistema MRP
+
+Hardware
+
+Servidor (Nube)
+- Servidor en la nube (AWS, Azure o similar)
+- Procesador virtual equivalente a Core i7 o superior
+- Memoria RAM 8 GB o superior
+- Espacio de almacenamiento 256 GB (escalable)
+- Conexión a internet de alta disponibilidad
+
+Cliente
+
+Por computadora
+- Procesador Core i3 o AMD Ryzen 3
+- Memoria RAM 4 GB
+- Monitor
+- Teclado
+- Mouse
+- Fuente de Poder
+- Conexión a Internet
+
+Parte Móvil
+- Teléfono inteligente o Tablet con acceso a internet
+- Almacenamiento mínimo de 16 GB
+- Memoria RAM 4 GB
+- Sistema operativo Android o iOS
+
+Software
+
+Servidor
+- Sistema operativo: Linux (Ubuntu Server recomendado)
+- Framework Backend: Django
+- Lenguaje de programación: Python
+- Gestor de base de datos: PostgreSQL
+- Servicios en la nube: AWS / Azure / Google Cloud
+- Control de versiones: Git
+- Repositorio de código: GitHub
+
+Cliente Web
+- Framework Frontend: React
+- Lenguajes: JavaScript, HTML, CSS
+- Navegadores compatibles: Google Chrome, Edge, Firefox
+
+Cliente Móvil
+- Framework: Flutter
+- Lenguaje: Dart
+- Plataforma: Android / iOS
+
+Otros softwares adicionales
+- Visual Studio Code / Android Studio
+- Postman (pruebas de API)
+- Jira (gestión del proyecto)
+- Microsoft Office (documentación)
+
+
+6. Tecnología
+
+a. Para el desarrollo
+
+El desarrollo del sistema estará basado en la metodología ágil SCRUM, la cual permitirá organizar el trabajo en iteraciones llamadas Sprints, facilitando la entrega progresiva de funcionalidades y la adaptación a cambios durante el proyecto.
+
+Para el modelado del sistema se utilizará el Lenguaje Unificado de Modelado (UML), el cual permitirá representar gráficamente los diferentes componentes del sistema mediante diagramas como casos de uso, clases y secuencia.
+
+En cuanto a la arquitectura tecnológica, el sistema estará compuesto por:
+- Frontend Web: desarrollado en React, permitiendo una interfaz dinámica e interactiva para la gestión de maestros, BOM, demanda, inventarios, motor MRP, órdenes y reportes.
+- Backend: desarrollado en Django, encargado de la lógica del sistema, el cálculo de requerimientos de materiales y la gestión de datos.
+- Base de Datos: PostgreSQL, para el almacenamiento estructurado de productos, componentes, inventarios, demandas, órdenes y resultados del MRP.
+- Aplicación Móvil: desarrollada en Flutter, permitiendo consultas y operaciones rápidas desde planta o almacén.
+- Infraestructura en la nube: para garantizar disponibilidad, escalabilidad y acceso remoto al sistema.
+
+b. Para la puesta en marcha
+
+El despliegue del sistema a la nube es una parte importante del proyecto, para ello es necesario hacer una buena elección de la plataforma que utilizaremos tanto para almacenar y administrar nuestro proyecto.
+
+Software
+
+SISTEMA OPERATIVO: Windows 10
+GESTOR DE BASE DE DATOS: PostgreSQL
+PLATAFORMA DE MODELADO: Enterprise Architect, Canva, Draw.io
+FRAMEWORK DE DESARROLLO: React.js, Django, Flutter
+LENGUAJE DE PROGRAMACIÓN: Python, JavaScript, Dart
+SERVIDOR / API Y PostgreSQL: Django
+EDITOR DE CÓDIGO: Visual Studio Code, pgAdmin
+
+Hardware
+
+MARCA | CPU | RAM | DISK
+ASUS TUF A15 | AMD Ryzen 7 6800H with Radeon Graphics (3.20 GHz) | 16GB | 1.5 T
+MSI RAIDER GE 76 | 12th Gen Intel(R) Core(TM) i9-12900H | 16GB | 1T
+HP Victus 15 | AMD Ryzen 5 8645HS | 16GB | 512GB
+HP Victus 15 | AMD Ryzen 5 8645HS | 16GB | 512GB
+DELL G15 | AMD Ryzen 5 6600H | 16GB | 512GB
