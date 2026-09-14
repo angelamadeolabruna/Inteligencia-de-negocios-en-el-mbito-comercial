@@ -19,6 +19,8 @@ ESTADO ACTUAL
 - Completado: Alcance (web y movil)
 - Completado: Elementos del sistema (hardware y software)
 - Completado: Tecnologia (desarrollo y puesta en marcha)
+- Completado: Costos (dispositivos, internet, capacitacion, SaaS y On-Premise)
+- Completado: Beneficios cualitativos y cuantitativos
 - Siguiente: esperar el ejemplo del usuario para la proxima seccion
 
 
@@ -318,3 +320,110 @@ MSI RAIDER GE 76 | 12th Gen Intel(R) Core(TM) i9-12900H | 16GB | 1T
 HP Victus 15 | AMD Ryzen 5 8645HS | 16GB | 512GB
 HP Victus 15 | AMD Ryzen 5 8645HS | 16GB | 512GB
 DELL G15 | AMD Ryzen 5 6600H | 16GB | 512GB
+
+
+7. Costos
+
+Tabla de dispositivos
+Concepto | Descripcion | Costo unico | Costo mensual
+PC HP PRODESK 600 G5 (Core i5-9500T, RAM 8GB, 256GB SSD) | Equipo para planificacion, almacén, compras y administración | 4500 - 6000 | -
+Impresora Laser BROTHER HL-1212 | Impresora laser WI-FI para reportes y ordenes | 1800 - 2000 | -
+Total Unico/Anual |  | 6300 - 8000 | -
+
+Tabla de Internet
+Concepto | Descripcion | Costo unico | Costo Mensual
+Router | TP-Link | 500 - 700 | -
+Total Unico/Anual |  | 500 - 700 | -
+
+Tabla de capacitacion
+Concepto | Descripcion | Costo Unico | Costo Mensual
+Capacitacion software | Formacion del personal en el uso del sistema MRP (8-12 hr) | 1500 - 2000 | -
+Capacitacion tecnica | Formacion para TI en manejo de servidor (On-Premise) | 2000 - 3000 | -
+Total Unico/Anual |  | 3500 - 5000 | -
+
+7.1. Software como servicio (SaaS)
+
+Aqui tenemos un escenario de suscripciones, en este caso, suscripciones anuales y mensuales.
+
+Tabla de Costos - SaaS
+Concepto | Descripcion | Costo Unico | Costo Anual
+Suscripcion al Software | Acceso a modulos del sistema MRP (maestros, BOM, inventario, demanda, motor MRP, ordenes y reportes) | - | 40000 - 50000
+Capacitacion inicial | Horas de formacion al personal | 1500 - 2000 | -
+Dispositivos Necesarios | Impresoras, PC’s, etc | 6300 - 8000 | -
+Conexion a internet | Indispensable para el manejo del sistema | 1300 - 2700 | -
+Soporte y actualizaciones | Incluido en la suscripcion | - | -
+Copias de seguridad | Incluido en la suscripcion | - | -
+Total Unico/Anual |  | 9100 - 12700 | 40000 - 50000
+
+Tabla de Suscripciones
+Concepto | Descripcion | Costo Unico | Costo Mensual
+Suscripcion al software | Acceso completo al sistema MRP | - | 4000 - 5000
+Soporte y Actualizaciones | Incluido en la suscripcion | - | -
+Copias de Seguridad | Incluido en la suscripcion | - | -
+Total Unico/Anual |  | - | 40000 - 50000
+
+7.2. Escenario On-Premise
+
+Tabla de Costos On-Premise
+Concepto | Descripcion | Costo Unico | Costo Anual
+Licencia del Software | Acceso completo al sistema MRP | 25000 - 35000 | -
+Servidor Fisico o virtual | CPU, RAM, disco o servidor en la nube | 20000 - 25000 | -
+Infraestructura | Rack’s, UPS, climatizacion, energia | 8000 - 15000 | -
+Capacitacion inicial | Horas de formacion del personal | 3500 - 5000 | -
+Dispositivos Necesarios | Impresora, PC’s, etc | 6300 - 8000 | -
+Conexion a internet | Indispensable para el manejo | 1300 - 2700 | -
+Soporte y actualizaciones | Pago adicional por contrato | - | 1500 - 2500
+Copias de seguridad | Costo de discos duros o sistemas de backup externo | 2500 - 3000 | -
+Total Unico/Anual |  | 66600 - 93700 | 1500 - 2500
+
+Tabla de Licencias
+Concepto | Descripcion | Costo Unico | Costo Mensual
+Licencia de Software | Derecho de uso, pago unico | 20000 - 30000 | -
+Actualizaciones mayores | Upgrade de version (cada 2-3 años) | 5000 - 8000 | -
+Total Unico/Anual |  | 25000 - 38000 | -
+
+Tabla de Servidores
+Concepto | Descripcion | Costo Unico | Costo Mensual
+Servidor Fisico | LENOVO ThinkStation (Intel Xeon, 16GB RAM, GPU Nvidia Quadro NVS 295) | 5000 - 10000 | -
+UPS | APC Smart-UPS (Ideal para servidores, con gran autonomia, pantalla LCD y mayor capacidad de gestion) | 20000 | -
+Licencias Linux | Sistema operativo del servidor | - | -
+Total Unico/Anual |  | 25000 - 30000 | -
+
+Tabla de Infraestructura
+Concepto | Descripcion | Costo Unico | Costo Mensual
+Rack, Climatizacion | Aire acondicionado, gabinete, cableado | 8000 - 15000 | -
+Total Unico/Anual |  | 8000 - 15000 | -
+
+Tabla de Soporte y Actualizaciones
+Concepto | Descripcion | Costo Unico | Costo Anual
+Soporte tecnico | Pago anual/mensual por mantenimiento | - | 1500 - 2500
+Actualizaciones | Incluye parches de seguridad | - | Incluido en soporte
+Total Unico/Anual |  | - | 1500 - 2500
+
+Tabla de Copias de Seguridad
+Concepto | Descripcion | Costo Unico | Costo Anual
+Discos externos/NAS | 2-4 TB para backups locales | 2500 - 3500 | -
+Total Unico/Anual |  | 2500 - 3500 | -
+
+
+8. Beneficios
+
+Invertir en un sistema de informacion para la planificacion de requerimientos de materiales (MRP) permite mejorar la supervivencia operativa y competitiva de la organizacion manufacturera. Mientras que la planificacion manual o basada en planillas genera errores, retrasos y costos ocultos, un MRP integra demanda, BOM, inventarios y lead times para decidir que comprar o fabricar, cuanto y cuando.
+
+8.1. Beneficios Cualitativos
+
+- Disponibilidad inmediata de informacion centralizada: Actualmente, calcular necesidades de materiales puede tomar horas y depender de datos incompletos. El sistema consolida productos, componentes, inventarios y demanda en un solo lugar, permitiendo decisiones basadas en informacion completa y actualizada.
+- Trazabilidad de accesos y cambios: Se registra quien consulta o modifica maestros, BOM, inventarios y ordenes, fortaleciendo el control interno y facilitando auditorias operativas.
+- Alertas operativas automaticas: Notificaciones por stock minimo, faltantes detectados por el MRP y ordenes proximas a su fecha sugerida, mejorando la reaccion oportuna de planificacion, compras y almacen.
+- Visibilidad estrategica de la operacion: La gerencia y el area de planificacion obtienen una vision clara de cobertura de materiales, ordenes sugeridas y estado del inventario, facilitando la toma de decisiones y la mejora continua.
+- Mejor sincronizacion entre areas: Produccion, compras y almacen trabajan sobre la misma informacion, reduciendo descoordinacion y dependencia de comunicacion informal.
+- Proteccion de la informacion operativa: La infraestructura contempla autenticacion, roles, permisos y resguardo de datos criticos de planificacion e inventarios.
+
+8.2. Beneficios Cuantitativos
+
+- Reduccion de errores de calculo: La explosion automatica de materiales y el calculo de requerimientos netos disminuyen fallas humanas propias de planillas manuales.
+- Menos compras urgentes: Al anticipar faltantes segun lead times, se reducen adquisiciones de emergencia y sobrecostos asociados.
+- Optimizacion de inventarios: Se evita tanto el sobrestock como la escasez, mejorando el capital inmovilizado en materiales.
+- Mayor cumplimiento de plazos: Al disponer de componentes a tiempo, se reduce el riesgo de detener fabricacion por falta de insumos.
+- Ahorro de tiempo administrativo: La generacion automatica de propuestas de ordenes y reportes libera tiempo del personal de planificacion, compras y almacen.
+- Mejor productividad operativa: Consultas rapidas de stock, faltantes y estado de ordenes (web y movil) aceleran la operacion diaria y reducen tiempos de busqueda de informacion.
