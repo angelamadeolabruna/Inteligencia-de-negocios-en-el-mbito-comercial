@@ -1,0 +1,35 @@
+8. BENEFICIOS ESPERADOS
+
+La implementación de un sistema de información MRP para la gestión de materiales y producción no es solo un cambio tecnológico, sino una transformación profunda en la cultura operativa y productiva de la organización manufacturera. Al eliminar la dependencia de planificaciones empíricas, registros manuales y hojas de cálculo fragmentadas, la empresa alcanzará beneficios que impactarán directamente en su rentabilidad, cumplimiento de entregas y capacidad de escalamiento industrial.
+
+8.1. Beneficios Operacionales y de Gestión (Planificación y Planta)
+
+Trazabilidad y Consistencia en la Estructura de Producto (BOM): La empresa contará con una gestión centralizada y multinivel de sus listas de materiales, garantizando que cada componente, materia prima y subensamble esté estrictamente vinculado al producto terminado. Esto asegura que cualquier modificación de diseño o formulación se propague automáticamente a los requerimientos de planta sin discrepancias de ingeniería.
+
+Control de Inventario en Tiempo Real y Eliminación de Quiebres de Stock: El sistema erradica las detenciones imprevistas en las líneas de fabricación provocadas por la falta de insumos críticos. La visibilidad permanente del stock físico, reservado y en tránsito permite que el abastecimiento sea completamente proactivo y planificado, en lugar de reactivo.
+
+Precisión Matemática en la Explosión de Materiales: Al automatizar el cálculo de necesidades brutas y netas a partir del plan maestro de producción y pedidos confirmados, se eliminan los errores humanos de cálculo en planillas. El sistema descuenta con exactitud las existencias actuales y programas de recepción, evitando tanto el sobrestock como el desabastecimiento.
+
+Generación Oportuna de Órdenes Sugeridas de Compra y Fabricación: El motor de cálculo incorpora los tiempos de reposición (lead times) de proveedores y de taller para emitir propuestas automáticas de compra y producción con fechas precisas de liberación. Esto sincroniza las compras de materia prima con el ritmo real de la manufactura.
+
+8.2. Beneficios Estratégicos y de Inteligencia de Negocios
+
+Dashboards de Visibilidad Gerencial y Cobertura de Materiales: Los directores y responsables de producción obtienen una visión integral y en tiempo real sobre el estado de la demanda, la cobertura de inventarios para las próximas semanas y el cumplimiento de las órdenes sugeridas, agilizando la toma de decisiones estratégicas sin esperar reportes manuales consolidados.
+
+Cumplimiento Estricto de Fechas de Entrega a Clientes: Al garantizar que los insumos y subensambles estén disponibles en el momento exacto en que se requieren para la fabricación, se reducen drásticamente los retrasos de producción. Esto optimiza el indicador de pedidos completos y a tiempo, elevando el prestigio comercial y la fidelidad de los clientes.
+
+Optimización del Capital de Trabajo: Al evitar adquisiciones sobredimensionadas basadas en conjeturas y eliminar compras de emergencia con sobreprecios o fletes urgentes, la organización reduce significativamente el capital inmovilizado en almacenes, liberando flujo de caja para el crecimiento del negocio.
+
+8.3. Beneficios para el Capital Humano y de Seguridad
+
+Claridad en Roles y Responsabilidades Operativas: Gracias a la gestión de accesos basada en roles (RBAC), el planificador de producción, el jefe de compras, el encargado de almacén y los operarios tienen delimitadas sus funciones y permisos en el sistema, reduciendo confusiones y duplicidades en los registros de planta.
+
+Disminución Sustancial de la Carga Administrativa: El personal de compras y planificación deja de invertir horas rutinarias transcribiendo datos entre diferentes hojas de cálculo o buscando manualmente notas de entrega en papel. Esto permite enfocar su tiempo laboral en la optimización de procesos, control de mermas y negociación estratégica con proveedores.
+
+Auditoría, Trazabilidad y Transparencia Operativa: El sistema mantiene un registro histórico inalterable mediante bitácoras de auditoría, identificando qué usuario programó una orden, modificó una BOM o autorizó una salida de inventario. Esto fomenta una cultura de responsabilidad y protege al personal honesto ante desviaciones o pérdidas de stock.
+
+8.4. Beneficios de Escalabilidad y Modernización Tecnológica
+
+Arquitectura de Grado Empresarial: Basado en una arquitectura modular y desacoplada con backend en Django y base de datos PostgreSQL, el sistema está preparado para crecer al ritmo de la empresa. Si la organización decide incorporar nuevas líneas de producción, ampliar su catálogo a cientos de componentes o habilitar nuevos almacenes, la plataforma escalará eficientemente sin requerir reestructuraciones costosas.
+
+Movilidad Operativa en Almacén y Planta: Mediante la aplicación móvil desarrollada en Flutter, los operarios de almacén y planta pueden consultar existencias, recibir alertas de stock crítico y registrar movimientos directamente en el lugar donde ocurren los hechos físicos, cerrando la brecha digital entre el área operativa y la administración central.

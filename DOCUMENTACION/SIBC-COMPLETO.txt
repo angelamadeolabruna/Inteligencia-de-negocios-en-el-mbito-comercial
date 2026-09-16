@@ -1,0 +1,71 @@
+5.3. Datos
+
+Definición: El componente de datos constituye el activo más valioso del sistema MRP, pues sobre ellos opera el algoritmo matemático de planificación y control de requerimientos de materiales.
+
+Datos Maestros:
+Catálogo de artículos: Registro de productos terminados, subensambles y materias primas (código interno, descripción, tipo de material, unidad de medida base y costo estándar).
+Listas de Materiales (BOM multinivel): Definición de la estructura del producto con relación jerárquica padre-hijo, cantidad neta requerida por unidad y factor de merma estimado.
+Parámetros de planificación: Lead time de adquisición (días de entrega del proveedor), lead time de fabricación (días de manufactura interna), tamaño de lote, stock mínimo y stock de seguridad.
+Directorio de proveedores y líneas de producción/ensamble.
+
+Datos Transaccionales:
+Inventario en tiempo real: Existencia física actual, stock reservado para producción, stock disponible para asignación y stock en tránsito (órdenes de compra pendientes de entrega).
+Movimientos de kardex: Registro detallado de ingresos por compra, egresos a producción, devoluciones y ajustes de merma.
+Demanda independiente: Registro de pedidos confirmados de clientes con fechas prometidas de entrega y programa maestro de producción (MPS).
+Órdenes generadas: Propuestas de órdenes de compra para insumos externos y propuestas de órdenes de fabricación para artículos internos, con fecha calculada de liberación y recepción requerida.
+
+Reglas de Integridad y Validación:
+Integridad referencial estricta: Prohibición de registrar componentes inexistentes en una lista de materiales (BOM).
+Validación contra ciclos infinitos: Prevención de dependencias circulares (un artículo no puede ser componente directo o indirecto de sí mismo).
+Consistencia operativa: Restricción de cantidades negativas en existencias de inventario y factores de consumo positivos obligatorios.
+
+
+5.4. Procesos
+
+Los procedimientos del sistema articulan el flujo de información, la operación en planta y el ciclo de desarrollo:
+
+1. Proceso de Planificación MRP (Proceso Central de Negocio):
+Entrada: Consolidación del Plan Maestro de Producción (MPS) y pedidos confirmados de clientes con fechas de entrega.
+Explosión: Desagregación jerárquica de la estructura del producto utilizando las listas de materiales (BOM).
+Cálculo Neto: Sustracción del inventario disponible y órdenes en tránsito a las necesidades brutas calculadas.
+Compensación por Lead Time: Desfase retrospectivo de la fecha requerida según los tiempos de reposición del proveedor o taller.
+Salida: Emisión automatizada de propuestas de órdenes de compra sugeridas y órdenes de fabricación sugeridas.
+
+2. Proceso de Gestión de Inventario:
+Recepción de insumos: Registro de ingreso de materiales al almacén contra orden de compra confirmada y actualización inmediata del stock disponible.
+Despacho a planta: Entrega de materias primas a órdenes de fabricación activas y descuento automático en el inventario.
+Monitoreo continuo: Generación automática de alertas operativas al alcanzar los umbrales de stock mínimo o de seguridad.
+
+3. Proceso de Desarrollo y Despliegue (Ciclo de Vida Scrum):
+Planificación y priorización del Product Backlog en conjunto con el Product Owner.
+Desarrollo iterativo en Sprints quincenales, trabajo colaborativo mediante ramas en Git, pruebas de API en Postman y despliegue continuo en el servidor de producción.
+
+
+5.5. Gente (Personas)
+
+Identifica a los actores que interactúan con el sistema según sus roles y responsabilidades:
+
+Equipo de Desarrollo (Roles SCRUM):
+Product Owner: Define la visión del producto, prioriza el Product Backlog y valida los criterios de aceptación de cada historia de usuario.
+Scrum Master: Facilita las ceremonias ágiles, elimina impedimentos y asegura la correcta aplicación del marco Scrum.
+Equipo de Desarrollo (Dev Team): Diseña la base de datos relacional, programa el backend en Django, el frontend en React y la aplicación móvil en Flutter, garantizando la calidad del software.
+
+Usuarios Finales de la Organización:
+Planificador de Producción: Carga el Plan Maestro de Producción (MPS), ejecuta la corrida del algoritmo MRP y aprueba las órdenes sugeridas de fabricación.
+Jefe de Compras / Adquisiciones: Revisa las órdenes de compra sugeridas por el sistema, cotiza con proveedores y formalizar las adquisiciones.
+Encargado de Almacén: Registra entradas y salidas de materiales desde la app móvil o interfaz web y atiende las alertas de stock mínimo.
+Operario de Planta: Consulta el estado de materiales requeridos para su turno y confirma el consumo en líneas de producción desde la aplicación móvil.
+Administrador del Sistema: Gestiona los usuarios, perfiles, asignación de permisos (RBAC) y ejecución de copias de seguridad.
+
+
+5.6. Documentación
+
+Comprende el conjunto de artefactos físicos y digitales que respaldan el ciclo de vida del software:
+
+Documentación Metodológica y de Requerimientos: Perfil de proyecto, Product Backlog inicial, Historias de Usuario con Criterios de Aceptación, actas de Sprint Planning y Retrospectivas.
+
+Documentación de Análisis y Diseño: Diagramas UML (Casos de Uso, Diagrama de Clases, Diagrama Entidad-Relación, Diagrama de Despliegue y Diagramas de Secuencia del cálculo MRP).
+
+Documentación Técnica y de Código: Especificación de la API REST (Swagger/OpenAPI), diccionario de datos de PostgreSQL y documentación de instalación/despliegue en servidor Linux.
+
+Documentación para el Usuario: Manual de usuario para el entorno Web, guía rápida de operaciones de almacén para la App Móvil y manual de contingencias/respaldos para el administrador.

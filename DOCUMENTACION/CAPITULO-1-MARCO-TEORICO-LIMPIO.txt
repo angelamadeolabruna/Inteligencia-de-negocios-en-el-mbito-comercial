@@ -1,0 +1,73 @@
+CAPÍTULO 1: MARCO TEÓRICO
+
+1.1. Marco Referencial
+
+En la actualidad, las empresas del sector manufacturero e industrial requieren soluciones tecnológicas avanzadas para optimizar la planificación de requerimientos de materiales (MRP) y garantizar la continuidad operativa de sus líneas de producción. La implementación de un sistema de información estructurado permite integrar y automatizar procesos críticos como la gestión de datos maestros, la administración de listas de materiales (BOM multinivel), el control transaccional de inventarios en tiempo real, el cálculo matemático de necesidades netas y la emisión oportuna de órdenes de compra y de fabricación, asegurando una administración eficiente y libre de sobrecostos.
+
+A diferencia de los métodos tradicionales basados en hojas de cálculo desvinculadas o decisiones empíricas, la adopción de un motor algorítmico de planificación de materiales permite transformar la demanda independiente (pedidos confirmados y plan maestro de producción) en planes de abastecimiento precisos. Al incorporar los tiempos de reposición (lead times) de proveedores y talleres internos, el sistema facilita la toma de decisiones proactiva, previene tanto la escasez de piezas críticas como el exceso de inventario ocioso, y optimiza el capital de trabajo de la empresa.
+
+Este proyecto tiene como objetivo desarrollar un sistema de información web y móvil de tipo MRP para la planificación y gestión de requerimientos de materiales, enfocado en elevar la eficiencia operativa, sincronizar las áreas de compras, almacén y producción, y potenciar la competitividad de las pequeñas y medianas empresas manufactureras en su entorno comercial.
+
+1.2. Marco de Trabajo Ágil SCRUM
+
+Fundamentos
+
+Scrum es un marco de trabajo ágil, liviano y adaptable diseñado para gestionar el desarrollo iterativo e incremental de software, con el objetivo primordial de maximizar el valor entregado al cliente y optimizar el retorno de inversión del proyecto.
+
+Se fundamenta en la priorización continua de las funcionalidades que aportan mayor valor de negocio y se apoya en los principios empíricos de inspección frecuente, adaptación oportuna y transparencia. Scrum establece un conjunto estructurado de roles, eventos y artefactos que orientan al equipo hacia la autogestión, la colaboración multidisciplinaria y la resolución ágil de problemas en entornos dinámicos.
+
+En el desarrollo del sistema MRP, Scrum permite realizar entregas parciales y funcionales a través de ciclos cortos de trabajo llamados Sprints. Este enfoque resulta idóneo para proyectos de manufactura y gestión de inventarios, donde las reglas de abastecimiento, los parámetros de cálculo y las estructuras de producto requieren validaciones continuas con los interesados para asegurar que el software responda con exactitud a la dinámica real de planta.
+
+Pilares de Scrum
+
+Transparencia: Todos los aspectos significativos del proceso de desarrollo deben ser visibles y comprensibles para aquellos que son responsables del resultado final. En el sistema MRP, esto implica mantener visible el estado del backlog, los avances del cálculo algorítmico y las definiciones de trabajo terminado para todo el equipo.
+
+Inspección: Los miembros del equipo Scrum inspeccionan frecuentemente los artefactos y el progreso hacia los objetivos del sprint para detectar oportunamente desviaciones indeseadas o fallas lógicas en las funcionalidades construidas.
+
+Adaptación: Si durante la inspección se determina que uno o más aspectos del producto se desvían de los límites aceptables de calidad o alcance, el proceso y los requerimientos deben ajustarse inmediatamente para minimizar el impacto en el proyecto.
+
+Valores de Scrum
+
+Compromiso: Los miembros del equipo se comprometen personalmente a alcanzar los objetivos de cada iteración y a construir un sistema MRP de alta calidad y precisión matemática.
+
+Valentía: El equipo asume con determinación los desafíos técnicos y algorítmicos complejos, como la recursividad en listas de materiales multinivel y la consistencia transaccional del inventario.
+
+Enfoque: Todo el esfuerzo y concentración del equipo se dirigen a las historias de usuario seleccionadas para el sprint en curso, evitando dispersiones en elementos que no agreguen valor inmediato.
+
+Apertura: El equipo y los interesados mantienen una comunicación transparente y honesta respecto al trabajo realizado, los impedimentos encontrados y las decisiones arquitectónicas tomadas.
+
+Respeto: Los integrantes reconocen mutuamente la capacidad, experiencia e independencia profesional de cada miembro para colaborar de manera armónica en la consecución de los objetivos del proyecto.
+
+Equipo Scrum: Roles y Funciones
+
+El equipo Scrum es autoorganizado y multidisciplinario, contando con todas las habilidades requeridas para generar un incremento de producto potencialmente utilizable al final de cada ciclo:
+
+Product Owner: Es el responsable de maximizar el valor del sistema MRP y del trabajo desarrollado por el equipo. Su función principal consiste en gestionar, articular y priorizar el Product Backlog, definiendo con claridad los criterios de aceptación para que cada funcionalidad responda a las necesidades operativas de planificación, compras y almacén.
+
+Scrum Master: Es el líder servidor del proyecto, encargado de asegurar que el marco Scrum sea comprendido y aplicado correctamente. Facilita las ceremonias ágiles, remueve los obstáculos técnicos y organizacionales que frenen al equipo de desarrollo, y promueve un entorno de mejora continua.
+
+Development Team: Es el equipo multidisciplinario encargado del diseño, modelado, codificación y aseguramiento de calidad del software. En este proyecto, sus integrantes asumen el modelado relacional en PostgreSQL, la construcción del backend en Django, la interfaz web en React y la solución móvil en Flutter.
+
+Eventos en Scrum
+
+Los eventos en Scrum son espacios de tiempo predeterminados que proporcionan regularidad, fomentan la colaboración y evitan la necesidad de reuniones innecesarias no programadas:
+
+Sprint: Es el corazón de Scrum; una iteración de tiempo fijo de dos semanas durante la cual se crea un incremento de software utilizable, probado y potencialmente desplegable del sistema MRP.
+
+Sprint Planning: Ceremonia que da inicio al sprint, donde el Product Owner y el equipo de desarrollo seleccionan los requerimientos de mayor prioridad del Product Backlog y definen colaborativamente el objetivo del sprint y el plan de trabajo para alcanzarlo.
+
+Daily Scrum: Sesión diaria de coordinación de quince minutos en la cual los miembros del equipo sincronizan sus avances del día anterior, planifican las tareas inmediatas e identifican bloqueos que requieran la intervención del Scrum Master.
+
+Sprint Review: Reunión realizada al finalizar el sprint para presentar el incremento funcional desarrollado ante los interesados del proyecto, permitiendo inspeccionar las características del sistema MRP (por ejemplo, el módulo BOM o la explosión de requerimientos) y adaptar el backlog según los comentarios recibidos.
+
+Sprint Retrospective: Sesión interna del equipo Scrum celebrada tras la revisión del sprint, con el fin de analizar qué aspectos del proceso funcionaron bien, qué dificultades surgieron y definir compromisos concretos de mejora para la siguiente iteración.
+
+Artefactos de Scrum
+
+Los artefactos de Scrum representan trabajo o valor y están específicamente diseñados para maximizar la transparencia de la información clave del proyecto:
+
+Product Backlog: Es la lista ordenada y dinámica de todos los requisitos, funcionalidades, mejoras y correcciones técnicas que componen la visión completa del sistema MRP, cuya priorización permanente está a cargo del Product Owner.
+
+Sprint Backlog: Es el conjunto de historias de usuario extraídas del Product Backlog para ser implementadas durante el sprint en curso, acompañadas del desglose de tareas técnicas necesarias para alcanzar el objetivo del sprint.
+
+Incremento: Es la suma de todos los elementos del Product Backlog completados durante un sprint, que cumplen estrictamente con la Definición de Hecho (Definition of Done) establecida por el equipo, constituyendo una versión operativa, estable y verificada del sistema MRP.
