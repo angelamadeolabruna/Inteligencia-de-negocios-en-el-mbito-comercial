@@ -942,6 +942,10 @@ Definiciones:
 ● Kardex: Registro detallado y cronológico de todas las transacciones de inventario (ingresos, salidas, ajustes) que permite el seguimiento en tiempo real de las existencias de cada artículo.
 ● Explosión de Materiales: Proceso de desagregación jerárquica de la estructura del producto utilizando las listas de materiales (BOM) para determinar la cantidad total de cada componente necesario para satisfacer la demanda.
 ● Requerimiento Neto: Cantidad de material que debe comprarse o fabricarse después de descontar el inventario disponible y las órdenes en tránsito del requerimiento bruto calculado.
+● Dashboard (Panel de Control): Herramienta visual dentro del sistema que muestra en tiempo real los indicadores clave de producción, estado de inventarios, cobertura de materiales y avance de órdenes, permitiendo a los responsables de producción tomar decisiones de forma rápida y fundamentada.
+● Alerta de Stock: Notificación automática generada por el sistema cuando un material alcanza su nivel mínimo o de seguridad, indicando la necesidad urgente de reordenar para evitar la interrupción de la producción.
+● Orden Sugerida: Propuesta generada automáticamente por el motor MRP que indica qué materiales deben comprarse o fabricarse, en qué cantidad y en qué fecha, considerando los lead times y la demanda actual.
+● Bitácora de Auditoría: Registro inmutable y cronológico de todas las transacciones y modificaciones realizadas en el sistema, identificando el usuario responsable, la acción realizada y la fecha y hora exacta.
 
 Acrónimos y Abreviaturas:
 ● CU: Casos de Uso.
@@ -957,7 +961,10 @@ Acrónimos y Abreviaturas:
 ● REST: Representational State Transfer.
 ● IoT: Internet de las Cosas.
 ● QA: Quality Assurance (Aseguramiento de Calidad).
-● UI/UX: Experiencia de Usuario/Interfaz de Usuario.
+● UX/UI: Experiencia de Usuario/Interfaz de Usuario.
+● MRP: Material Requirements Planning (Planificación de Requerimientos de Materiales).
+● MRP II: Manufacturing Resource Planning (Planificación de Recursos de Manufactura).
+● SaaS: Software as a Service (Software como Servicio).
 
 3.5 Funciones del Producto
 
