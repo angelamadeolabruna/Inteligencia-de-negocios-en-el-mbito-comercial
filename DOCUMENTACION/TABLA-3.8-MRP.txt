@@ -1,0 +1,13 @@
+ID	Requisito No Funcional	Descripcion	Plataforma	Prioridad
+RNF-MRP-01	Escalabilidad del Motor MRP	Crecimiento productos/BOM/ordenes/volumen datos MRP	Web/Movil	Alta
+RNF-MRP-02	Seguridad Industrial RBAC	JWT/encriptacion/permisos Planificador/Almacen/Compras	Web/Movil	Alta
+RNF-MRP-03	Disponibilidad Operativa 24/7	Operacion continua MRP/inventario/alertas sin interrupcion	Web/Movil	Alta
+RNF-MRP-04	Compatibilidad Multiplataforma	Navegadores modernos y moviles Android/iOS planta	Web/Movil	Media
+RNF-MRP-05	Rendimiento del Motor MRP	Respuesta menor 2 segundos consultas/reportes/calculo	Web/Movil	Alta
+RNF-MRP-06	Usabilidad Operativa Planta	Interfaz intuitiva operarios registren inventario/confirmen ordenes	Web/Movil	Media
+RNF-MRP-07	Integracion con Terceros	API REST para integracion proveedores/facturacion/servicios externos	Web	Media
+RNF-MRP-08	Auditoria de Datos MRP	Bitacora inmutable BOM/inventario/ordenes usuario/fecha	Web/Movil	Alta
+RNF-MRP-09	Multilenguaje Regional	Espanol primero preparado otros idiomas contexto regional	Web/Movil	Baja
+RNF-MRP-10	Autenticacion Avanzada MRP	Inicio sesion encriptado/proteccion vulnerabilidades comunes	Web/Movil	Alta
+RNF-MRP-11	Backups Poliglotos Automaticos	Copias seguridad diarias PostgreSQL/MongoDB/DynamoDB	Web/Movil	Alta
+RNF-MRP-12	Mantenimiento Continuo MRP	Mejoras sin interrumpir operacion planificacion/inventario	Web/Movil	Media

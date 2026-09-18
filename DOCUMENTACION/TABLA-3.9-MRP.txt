@@ -1,0 +1,32 @@
+ID	Funcionalidad	Plataforma
+CU01	Autenticacion y Seguridad (JWT/RBAC)	Web/Movil
+CU02	Cerrar Sesion con Seguridad	Web/Movil
+CU03	Registrar y Modificar Usuarios y Roles	Web
+CU04	Asignar Roles y Permisos RBAC	Web
+CU05	Registrar Datos Maestros de Productos	Web
+CU06	Definir Estructura BOM Multinivel (Creacion/Edicion)	Web
+CU07	Validar Consistencia y Versionar BOM	Web
+CU08	Consultar Datos Maestros y BOM Interactiva	Web
+CU09	Registrar Inventario y Kardex (Ingresos/Salidas)	Web/Movil
+CU10	Consultar Inventario en Tiempo Real	Web/Movil
+CU11	Generar Alertas de Stock Minimo	Web/Movil
+CU12	Registrar Movimientos de Kardex Rapidos (Movil)	Web/Movil
+CU13	Registrar Pedidos de Clientes y Plan Maestro MPS	Web
+CU14	Ejecutar Motor MRP (Explosion/Calculo Neto/Lead Times)	Web
+CU15	Consultar Resultados del Motor MRP (Matriz Temporal)	Web
+CU16	Generar Propuestas de Ordenes Sugeridas (Compra)	Web
+CU17	Generar Propuestas de Ordenes Sugeridas (Fabricacion)	Web
+CU18	Confirmar y Seguir Ciclo de Vida de Ordenes	Web
+CU19	Recalcular Dinamicamente Ordenes ante Cambios	Web
+CU20	Generar Reportes de Requerimientos y Faltantes	Web
+CU21	Generar Reportes de Inventario y Kardex	Web
+CU22	Visualizar Dashboard Ejecutivo MRP	Web
+CU23	Exportar Informes a PDF/Excel	Web
+CU24	Consultar Bitacora de Auditoria (BOM/Inventario/Ordenes)	Web
+CU25	Confirmar Recepcion de Material o Fabricacion (Movil Planta)	Movil
+CU26	Registrar Movimientos Rapidos Almacen (Movil Planta)	Movil
+CU27	Revisar y Aprobar Ordenes Sugeridas (Movil Gerencia)	Movil
+CU28	Consultar Dashboard Resumido Remoto (Movil Gerencia)	Movil
+CU29	Predecir Requerimientos Futuros de Materiales	Web
+CU30	Recuperar Contraseña y Restablecer Credenciales	Recuperacion inmediata para operacion MRP continua	Web/Movil
+CU31	Visualizar Dashboard Personalizado por Rol	KPIs especificos rol (Planificador: MPS/Ordenes; Almacen: Inventario/Alertas; Compras: Proveedores/Ordenes)	Web

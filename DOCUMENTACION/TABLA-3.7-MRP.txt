@@ -1,0 +1,16 @@
+ID	Funcionalidad	Descripcion	Plataforma	Prioridad
+RF-MRP-01	Autenticacion y Seguridad	Permite autenticarse con JWT	Web/Movil	Alta
+RF-MRP-02	Control de Acceso RBAC	Asignacion granular por rol	Web	Alta
+RF-MRP-03	Gestion de Datos Maestros	Registro productos/materiales/parametros	Web	Alta
+RF-MRP-04	Gestion de BOM Multinivel	Definicion estructuras jerarquicas/versionado	Web	Alta
+RF-MRP-05	Registro de Pedidos y MPS	Captura pedidos y carga MPS con fechas	Web	Alta
+RF-MRP-06	Control de Inventario y Kardex	Existencias fisicas/movimientos/calculo tiempo real	Web/Movil	Alta
+RF-MRP-07	Motor MRP (Explosion)	Calculo bruto/neto/BOM/lead times	Web	Alta
+RF-MRP-08	Ordenes Sugeridas (Compra y Fabricacion)	Generacion propuestas reposicion fechas/cantidades	Web	Alta
+RF-MRP-09	Seguimiento de Ordenes	Ciclo vida sugerida-confirmada-cerrada/trazabilidad	Web	Alta
+RF-MRP-10	Alertas de Stock Minimo	Notificaciones automaticas ante niveles minimos/reordenar	Web/Movil	Alta
+RF-MRP-11	Reportes Ejecutivos y Dashboards	KPIs cobertura/faltantes/inventario/ordenes	Web	Alta
+RF-MRP-12	Exportacion de Informes	Descarga PDF/Excel auditoria	Web	Media
+RF-MRP-13	Bitacora de Auditoria	Registro inmutable usuario/fecha/accion	Web	Alta
+RF-MRP-14	Aplicacion Movil (Operacion Planta)	Consulta inventarios/movimientos/confirmacion operativa	Movil	Alta
+RF-MRP-15	Aplicacion Movil (Supervision Gerencial)	Revisar aprobar ordenes/dashboard remoto	Movil	Alta
